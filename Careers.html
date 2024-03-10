@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers Page</title>
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
+
+<style>
+    .contact{
+        margin-top: 75px;
+        width: 100%;
+        
+    }
+    .contacts fieldset{
+        width: 100%;
+        border: 1px solid rgb(242, 240, 240);
+        padding: 30px;
+    }
+
+
+    .contacts .background {
+        background: url(Career.jpg) repeat;
+        background-size: cover;
+        border: 1px solid white;
+        width: 100%;
+        
+      }
+      
+      .contacts .transbox {
+        margin: 70px;
+        background-color: #ffffff;
+        border: 1px solid gray;
+        opacity: 0.3;
+        width: 80%;
+        height: 40vh;
+      }
+      
+      .contacts .transbox p {
+        margin: 5%;
+        font-weight: bold;
+        color: #000000;
+      }
+
+      .animated {
+        animation-duration: 2s;
+     }
+
+     .fadeInLeft {
+        animation-name: fadeInLeft;
+        } 
+
+     @keyframes fadeInLeft {
+        0% {
+           opacity: 0;
+           transform: translateX(-50px);
+        }
+        100% {
+           opacity: 1;
+           transform: translateX(0);
+        }
+     }
+
+      .animated1 {
+        animation-duration: 2s;
+     }
+     .fadeInRight {
+        animation-name: fadeInRight;
+        } 
+     @keyframes fadeInRight {
+        0% {
+           opacity: 0;
+           transform: translateX(50px);
+        }
+        100% {
+           opacity: 1;
+           transform: translateX(0);
+        }
+     }
+     .careerHead{
+      text-align: center;
+      text-decoration: underline;
+      margin: 60px;
+     }
+</style>
+
+</head>
+<body>
+    <div class="container-fluid navbar-expand-lg" id="navbar">
+        <div class="row navbar">
+          <div class="col-8" >
+            <img src="Nss_Loog__1.png" alt="logo">
+            <a href="index.html">Home</a>
+            <a href="Product.html">Product</a>
+            <a href="LMS.html">L M S</a>
+            <a href="Tinkering.html">Tinkering</a>
+            <a href="Careers.html">Careers</a>
+            <a href="Services.html">Service</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="col-4 brandName">Narayan Software Solution</div>
+        </div>
+     </div>
+
+      <div class="container contact">
+        <div class="row">
+            <div class="col-lg-8 col-md-6 col-sm-12 contacts animated fadeInLeft">
+                <div class="background">
+                    <div class="transbox">
+                      <p>This is some text that is placed in the transparent box.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 contacts animated1 fadeInRight">
+                <form onsubmit="validation()">
+                <fieldset>
+                    <div class="form-group row m-2">
+                        <label for="fname" class="col-sm-2 col-form-label">Farst Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="fname" required>
+                        </div>
+                      </div>
+                    <div class="form-group row m-2">
+                        <label for="lname" class="col-sm-2 col-form-label">Last Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" class="form-control" id="lname" required>
+                        </div>
+                      </div>
+                    <div class="form-group row m-2">
+                        <label for="email" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                          <input type="email" class="form-control" id="email" required>
+                        </div>
+                      </div>
+                      <div class="form-group row m-2">
+                        <label for="file" class="col-sm-2 col-form-label">Resume</label>
+                        <div class="col-sm-10">
+                          <input type="file" class="form-control" id="file" required>
+                        </div>
+                      </div>
+                      <div class="form-group row m-2">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Message</label>
+                        <div class="col-sm-10">
+                          <textarea name="" id="textarea" class="form-control" cols="30" rows="2" placeholder="Text here regarding"></textarea>
+                        </div>
+                      </div>
+                    <input type="submit" class="btn btn-primary form-control m-2" value="Send">
+                </fieldset>
+            </form>         
+          </div>
+        </div>
+      </div>
+
+      <div class="careerHead"><h3><b>Careers</b></h3></div>
+
+      <div class="container">
+        <div class="row border m-3">
+          <div class="col-lg-2 col-md-6 col-sm-12 animated fadeInLeft">
+            <a href="#" class="tinker"><img src="Tinker.png" alt="tinker"></a>
+            <h4><b> Tinkering Lab</b></h4>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 animated1 fadeInRight">
+            <p class="tinker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, asperiores reiciendis numquam labore earum id ullam molestias possimus rem ipsum nostrum sapiente mollitia distinctio officia maxime pariatur repudiandae odio hic soluta placeat iusto cum error. Explicabo rerum fugit cupiditate quibusdam molestias quo, quam, velit consequatur labore ea, fugiat enim deleniti.</p>
+          </div>
+          
+          <div class="col-lg-2 col-md-6 col-sm-12 animated fadeInLeft">
+            <a href="#" class="tinker"><img src="robotics.png" alt="tinker"></a>
+            <h4><b>Robotics Lab/AI</b></h4>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 animated1 fadeInRight">
+            <p class="tinker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, asperiores reiciendis numquam labore earum id ullam molestias possimus rem ipsum nostrum sapiente mollitia distinctio officia maxime pariatur repudiandae odio hic soluta placeat iusto cum error. Explicabo rerum fugit cupiditate quibusdam molestias quo, quam, velit consequatur labore ea, fugiat enim deleniti.</p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 animated fadeInLeft">
+            <a href="#" class="tinker"><img src="LMS.png" alt="tinker"></a>
+            <h4><b>Learning Management System</b></h4>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 animated1 fadeInRight">
+            <p class="tinker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, asperiores reiciendis numquam labore earum id ullam molestias possimus rem ipsum nostrum sapiente mollitia distinctio officia maxime pariatur repudiandae odio hic soluta placeat iusto cum error. Explicabo rerum fugit cupiditate quibusdam molestias quo, quam, velit consequatur labore ea, fugiat enim deleniti.</p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 animated fadeInLeft">
+            <a href="#" class="tinker"><img src="websit.png" alt="tinker"></a>
+            <h4><b>Web Devlopment</b></h4>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 animated1 fadeInRight">
+            <p class="tinker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, asperiores reiciendis numquam labore earum id ullam molestias possimus rem ipsum nostrum sapiente mollitia distinctio officia maxime pariatur repudiandae odio hic soluta placeat iusto cum error. Explicabo rerum fugit cupiditate quibusdam molestias quo, quam, velit consequatur labore ea, fugiat enim deleniti.</p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 animated fadeInLeft">
+            <a href="#" class="tinker"><img src="trainer.png" alt="tinker"></a>
+            <h4><b>Trainer/Teacher</b></h4>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 animated1 fadeInRight">
+            <p class="tinker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, asperiores reiciendis numquam labore earum id ullam molestias possimus rem ipsum nostrum sapiente mollitia distinctio officia maxime pariatur repudiandae odio hic soluta placeat iusto cum error. Explicabo rerum fugit cupiditate quibusdam molestias quo, quam, velit consequatur labore ea, fugiat enim deleniti.</p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 animated fadeInLeft">
+            <a href="#" class="tinker"><img src="Vendor.png" alt="tinker"></a>
+            <h4><b>Vendor/Supllier</b></h4>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 animated1 fadeInRight">
+            <p class="tinker">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, asperiores reiciendis numquam labore earum id ullam molestias possimus rem ipsum nostrum sapiente mollitia distinctio officia maxime pariatur repudiandae odio hic soluta placeat iusto cum error. Explicabo rerum fugit cupiditate quibusdam molestias quo, quam, velit consequatur labore ea, fugiat enim deleniti.</p>
+          </div>
+        </div>
+      </div>
+
+        
+
+       <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Our Company</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quis optio obcaecati deleniti repellendus odio libero earum in eligendi, reiciendis explicabo recusandae</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 footrproduct">
+                <h3>product</h3>
+                <ul>
+                    <li> <a href="#">Robotics</a></li>
+                    <li> <a href="#">Robotics Kit</a> </li>
+                    <li> <a href="#">Tinkering Kit</a> </li>
+                    <li> <a href="#">Drone Kit</a> </li>
+                    <li> <a href="#">Machanical Kit</a> </li>
+                    <li> <a href="#">And Inovitive Kit</a> </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Contact</h3>
+               <address>
+                Rajori Graden Shiva Temple<br>
+                Rajori Graden <br>
+                Delhi 110002
+               </address>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h3>Media</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+       </div>
+       <div class="container-fluid copyright">
+        <div class="row">
+            <div class="col">
+                <h5>Copyright &#169 reserved to N S S PVT Ltd</h5>
+            </div>
+        </div>
+       </div>
+
+       <script>
+        function validation(){
+            const f = document.getElementById("fname").value
+            const l = document.getElementById("lname").value
+            const t = document.getElementById("textarea").value
+
+            if(f.length<=4){
+              alert("Name Is too Short.")
+            }
+            else if(t.length<=10){
+              alert("Minimum 10 charcter")
+            }
+            else{
+              alert("Successfully sent")
+            }
+        }
+       </script>
+    <script src="index.js"></script>
+</body>
+</html>
